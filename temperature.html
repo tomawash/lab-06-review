@@ -8,11 +8,13 @@
 </head>
 <body>
 	<script>
-		var celsius = prompt("Please enter a temperature in celsius");
+		var tempincelsius = prompt("Please enter a temperature in celsius");
 
-		var farenheit = (celsius * 1.8) + 32;
+		var tempinfarenheit = (tempincelsius * 1.8) + 32;
 
-		console.log(celsius + " degrees celsius is " + farenheit + " degrees farenheit");
+		tempinfarenheit = Math.round(tempinfarenheit);
+
+		console.log(tempincelsius + " degrees celsius is " + tempinfarenheit + " degrees farenheit");
 	</script>
 </body>
 </html>
